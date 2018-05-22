@@ -265,7 +265,7 @@ nav.post-controls .like-button .my-likes {
 
 .list-controls .combo-box .combo-box-header,
 .list-controls .select-kit.dropdown-select-box .dropdown-select-box-header,
-.mobile-view .list-controls .nav-pills>li,
+.mobile-view .list-controls .nav-pills>li>a,
 .mobile-view .mobile-nav
 {
   background: $combo-box-bg;
@@ -294,6 +294,21 @@ nav.post-controls .like-button .my-likes {
 }
 .period-chooser-header {
    border-radius: 0;
+}
+
+.mobile-view {
+  .list-controls .nav-pills>li {
+    background: transparent;
+  }
+  .mobile-nav>li>a {
+    background: $combo-box-bg;
+    color: $combo-box-text;
+    border-radius: $global-button-border-radius;  
+    .fa {
+      color: $combo-box-text;
+    
+    }
+  }
 }
 
 // Editor buttons 
