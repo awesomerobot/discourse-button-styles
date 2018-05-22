@@ -5,7 +5,7 @@ global_button_border_radius:
 
 basic_button_bg:
   default: ''
-  description: 'Example: #FF0000 or red'
+  description: 'Note: Styling basic buttons will override primary buttons, so you may want to apply primary button styles below as well. Example: #FF0000 or red. '
 
 basic_button_bg_hover:
   default: ''
@@ -21,7 +21,7 @@ basic_button_text_hover:
 
 primary_button_bg:
   default: ''
-  description: 'Example: #FF0000 or red'
+  description: 'Note: These are important buttons, like the create topic button in the composer. Example: #FF0000 or red. '
 
 primary_button_bg_hover:
   default: ''
@@ -37,7 +37,7 @@ primary_button_text_hover:
 
 header_text:
   default: ''
-  description: 'Example: #FF0000 or red'
+  description: 'Note: These are the primary nav buttons on the top right. Example: #FF0000 or red.'
 
 header_bg:
   default: ''
@@ -53,7 +53,7 @@ header_bg_hover:
 
 nav_pill_bg_hover:
   default: ''
-  description: 'Example: #FF0000 or red'
+  description: 'Note: Main topic list nav buttons. Example: #FF0000 or red. '
 
 nav_pill_text:
   default: ''
@@ -65,7 +65,7 @@ nav_pill_text_hover:
 
 post_controls_bg:
   default: ''
-  description: 'Example: #FF0000 or red'
+  description: 'Note: Buttons under each post. Example: #FF0000 or red. '
 
 post_controls_bg_hover:
   default: ''
@@ -81,7 +81,7 @@ post_controls_text_hover:
 
 editor_button_bg: 
   default: ''
-  description: 'Example: #FF0000 or red'
+  description: 'Note: Buttons in the composer. Example: #FF0000 or red. '
 
 editor_button_color: 
   default: ''
