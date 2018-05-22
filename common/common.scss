@@ -120,6 +120,11 @@ $combo-box-text: $basic-button-text !default;
   opacity: .25;
 }
 
+.search-container .search-advanced-sidebar .search-advanced-title.btn {
+  background: $basic-button-bg;
+  color: $basic-button-text;
+}
+
 // Various edge cases
 
 .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row,
@@ -183,7 +188,6 @@ label.btn i {
       }
     }
   }
-
 
 // Nav pills 
 .nav-pills>li>a {
@@ -261,7 +265,6 @@ nav.post-controls .like-button .my-likes {
 
 
 // Combo-box header 
-
 
 .list-controls .combo-box .combo-box-header,
 .list-controls .select-kit.dropdown-select-box .dropdown-select-box-header,
