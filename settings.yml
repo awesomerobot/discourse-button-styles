@@ -83,15 +83,15 @@ editor_button_bg:
   default: ''
   description: 'Note: Buttons in the composer. Example: #FF0000 or red. '
 
-editor_button_color: 
-  default: ''
-  description: 'Example: #FF0000 or red'
-
 editor_button_bg_hover:
   default: ''
   description: 'Example: #FF0000 or red'
 
-editor_button_color_hover:
+editor_button_text: 
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+editor_button_text_hover:
   default: ''
   description: 'Example: #FF0000 or red'
 

@@ -302,18 +302,18 @@ nav.post-controls .like-button .my-likes {
    button, 
    .select-kit.dropdown-select-box .dropdown-select-box-header {
     background: $editor-button-bg;
-    color: $editor-button-color;
+    color: $editor-button-text;
     border-radius: $global-button-border-radius;
     @if $editor-button-bg != "null" {
       margin-right: 1px;
     }
     &:hover {
       background: $editor-button-bg-hover;
-      color: $editor-button-color-hover;
+      color: $editor-button-text-hover;
     }
     }
   .select-kit.dropdown-select-box .dropdown-select-box-header:hover .d-icon {
-    color: $editor-button-color-hover;  
+    color: $editor-button-text-hover;  
     border-radius: $global-button-border-radius;    
   }
 }
