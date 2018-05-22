@@ -1,0 +1,100 @@
+global_button_border_radius: 
+  type: string
+  default: 0
+  description: 'Example: 10% or 10px'
+
+basic_button_bg:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+basic_button_bg_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+basic_button_text:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+basic_button_text_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+primary_button_bg:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+primary_button_bg_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+primary_button_text:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+primary_button_text_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+header_text:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+header_bg:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+header_text_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+header_bg_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+nav_pill_bg_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+nav_pill_text:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+nav_pill_text_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+post_controls_bg:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+post_controls_bg_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+post_controls_text:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+post_controls_text_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+editor_button_bg: 
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+editor_button_color: 
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+editor_button_bg_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+editor_button_color_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+
+
+

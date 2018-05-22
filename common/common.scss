@@ -1,0 +1,348 @@
+$global-button-border-radius: 0 !default;
+
+// Basic Button
+
+$basic-button-bg: null !default;
+$basic-button-text: null !default;
+
+$basic-button-bg-hover: null !default;
+$basic-button-text-hover: null !default;
+
+// Primary Button
+
+$primary-button-bg: null !default;
+$primary-button-text: null !default;
+
+$primary-button-bg-hover: null !default;
+$primary-button-text-hover: null !default;
+
+// Header nav 
+
+$header-text: null !default;
+$header-bg: null !default;
+
+$header-text-hover: null !default;
+$header-bg-hover: null !default;
+
+// Nav pills 
+
+$nav-pill-bg: null !default;
+$nav-pill-text: null !default;
+
+$nav-pill-bg-hover: null !default;
+$nav-pill-text-hover: null !default;
+
+// Editor buttons 
+
+$editor-button-bg: null !default;
+$editor-button-color: null !default; 
+
+$editor-button-bg-hover: null !default;
+$editor-button-color-hover: null !default;
+
+// Post controls 
+
+$post-controls-bg: null !default;
+$post-controls-text: null !default;
+
+$post-controls-bg-hover: null !default;
+$post-controls-text-hover: null !default;
+
+// Post controls like button
+
+$like-button-bg: $post-controls-bg !default;
+$like-button-text: $post-controls-text !default;
+
+$like-button-bg-hover: $post-controls-bg-hover !default;
+$like-button-text-hover: $post-controls-text-hover !default;
+$like-button-text-hover-like-count: $post-controls-text-hover !default;
+
+// Combo box header
+
+$combo-box-bg: $basic-button-bg !default;
+$combo-box-text: $basic-button-text !default;
+
+
+// Overrides
+.btn-flat .d-icon,
+.select-kit .d-icon,
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row .d-icon {
+  opacity: 1;
+}
+
+// Basic Button
+
+.btn {
+  background: $basic-button-bg;
+  color: $basic-button-text;
+  border-radius: $global-button-border-radius;
+  &[href],
+  .d-icon-thumb-tack {
+    color: $basic-button-text;
+  }
+  i.d-icon {opacity: 1;}
+  .d-icon.d-icon-d-regular, 
+  .d-icon.d-icon-d-muted, 
+  .d-icon.d-icon-d-watching-first, 
+  .d-icon.d-icon-d-watching-first-post {
+    color: $basic-button-text;
+  }
+  .d-icon.d-icon-d-tracking, 
+  .d-icon.d-icon-d-watching {
+    color: $basic-button-text;
+  }
+  &:hover {
+    background: $basic-button-bg-hover;
+    color: $basic-button-text-hover;
+    
+    &[href],
+    .d-icon-thumb-tack {
+      color: $basic-button-text-hover;
+    }
+  }
+  &.btn-primary {
+    background: $primary-button-bg;
+    color: $primary-button-text;
+    border-radius: $global-button-border-radius;
+    
+    &:hover {
+      background: $primary-button-bg-hover;
+      color: $primary-button-text-hover;
+    }
+  }
+}
+
+.btn[disabled], 
+.btn.disabled {
+  background: $basic-button-bg !important;
+  color: $basic-button-text !important;
+  border-radius: $global-button-border-radius !important;
+  opacity: .25;
+}
+
+// Various edge cases
+
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row,
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row.is-selected,
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row.is-highlighted,
+.select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row.is-selected.is-highlighted {
+  background: $basic-button-bg;
+  border-radius: $global-button-border-radius;
+  
+  .name, .d-icon {
+    color: $basic-button-text;    
+  }
+  &:hover {
+    background: $basic-button-bg-hover;
+    
+    .name, .d-icon {
+      color: $basic-button-text-hover;    
+    }  
+  }
+}
+
+.topic-map .btn {
+  border-radius: 0;
+}
+
+.list-controls .select-kit.dropdown-select-box .dropdown-select-box-header:hover {
+  background: $basic-button-bg-hover;  
+}
+.select-kit.dropdown-select-box .dropdown-select-box-header:hover .d-icon {
+  color: $basic-button-text-hover;
+}
+
+.bootbox.modal .modal-footer a.btn-primary {
+  color: $primary-button-text;
+  &:hover {
+    color: $primary-button-text-hover;    
+  }  
+}
+
+label.btn i {
+  color: $basic-button-text;
+  &:hover {
+    color: $basic-button-text-hover;    
+  }
+}
+
+// Header nav 
+
+  .d-header-icons {
+    .icon {
+      background: $header-bg;    
+      color: $header-text;
+    }
+    .icon:hover {
+      background: $header-bg-hover;
+      color: $header-text-hover; 
+    }
+    .drop-down-mode & {
+      .active .icon {
+        color: $header-text;
+      }
+    }
+  }
+
+
+// Nav pills 
+.nav-pills>li>a {
+  background: $nav-pill-bg;
+  color: $nav-pill-text;
+  border-radius: $global-button-border-radius;
+  
+  .d-icon {
+    opacity: 1;
+  }
+  &:hover {
+    background: $nav-pill-bg-hover;
+    color: $nav-pill-text-hover;  
+  }
+}
+
+.admin-controls .nav.nav-pills li.active a,
+.nav-pills>li.active>a, 
+.nav-pills>li>a.active {
+  background: $nav-pill-bg-hover;
+  color: $nav-pill-text-hover;
+}
+
+// Post controls 
+
+.discourse-no-touch .topic-body .actions .fade-out {
+  opacity: 1;
+  transition: background-color .25s, color .25s;  
+}
+
+nav.post-controls a, 
+nav.post-controls button,
+nav.post-controls button.create {
+  background: $post-controls-bg;
+  color: $post-controls-text;
+  border-radius: $global-button-border-radius;
+  transition: background-color .25s, color .25s;
+  &.delete {
+    background: $danger;    
+    &:hover {
+      background: $danger;   
+      color: $secondary; 
+    }
+  }  
+  &:hover {
+    background: $post-controls-bg-hover;
+    color: $post-controls-text-hover;
+  }
+}
+nav.post-controls .like-button,
+nav.post-controls .like-button .like-count, 
+nav.post-controls .like-button .my-likes {
+  background: $post-controls-bg;
+  
+  color: $post-controls-text;
+  margin-right: 5px;
+  border-radius: $global-button-border-radius;
+
+  i.d-icon, .like-count { 
+    color: $post-controls-text; 
+    background: transparent; 
+  }
+  &:hover {
+    background: $like-button-bg-hover;
+    i, .like-count {color: $like-button-text-hover; background: transparent; transition: none;}
+    .like-count.d-hover {
+      color: $like-button-text-hover;
+      text-decoration: underline;
+    }
+  }      
+}
+.has-like {
+  margin-left: -2px;
+}
+
+
+// Combo-box header 
+
+
+.list-controls .combo-box .combo-box-header,
+.list-controls .select-kit.dropdown-select-box .dropdown-select-box-header,
+.mobile-view .list-controls .nav-pills>li,
+.mobile-view .mobile-nav
+{
+  background: $combo-box-bg;
+  color: $combo-box-text;
+  border-radius: $global-button-border-radius;
+  
+  i {
+    background: transparent;
+    color: $combo-box-text;    
+  }
+  .badge-wrapper.bullet span.badge-category,
+  .badge-wrapper.bar span.badge-category {
+    color: $combo-box-text;        
+  }
+}
+.category-breadcrumb {
+  .is-none {
+    background: $combo-box-bg !important; 
+    color: $combo-box-text !important;
+    
+    i {
+      background: transparent !important;
+      color: $combo-box-text !important;    
+    } 
+  }
+}
+.period-chooser-header {
+   border-radius: 0;
+}
+
+// Editor buttons 
+
+.d-editor-button-bar {
+   button, 
+   .select-kit.dropdown-select-box .dropdown-select-box-header {
+    background: $editor-button-bg;
+    color: $editor-button-color;
+    border-radius: $global-button-border-radius;
+    @if $editor-button-bg != "null" {
+      margin-right: 1px;
+    }
+    &:hover {
+      background: $editor-button-bg-hover;
+      color: $editor-button-color-hover;
+    }
+    }
+  .select-kit.dropdown-select-box .dropdown-select-box-header:hover .d-icon {
+    color: $editor-button-color-hover;  
+    border-radius: $global-button-border-radius;    
+  }
+}
+
+#reply-control .reply-to button i {
+   border-radius: $global-button-border-radius;   
+
+}
+
+// Confirm/deny
+
+button.ok, .btn-success {
+  border-radius: $global-button-border-radius;
+  background: $success;
+  color: $secondary;
+  &:hover, &:hover[href] {
+    background: $success;
+    color: $secondary;
+  }
+
+}
+
+button.cancel, .btn-danger {
+  border-radius: $global-button-border-radius;
+  background: $danger;
+  color: $secondary;
+  &:hover, &:hover[href] {
+    background: $danger;
+    color: $secondary;
+  }
+}
+
