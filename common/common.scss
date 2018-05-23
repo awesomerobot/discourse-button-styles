@@ -32,6 +32,9 @@ $nav-pill-text: null !default;
 $nav-pill-bg-hover: null !default;
 $nav-pill-text-hover: null !default;
 
+$nav-pill-bg-active: null !default;
+$nav-pill-text-active: null !default;
+
 // Editor buttons 
 
 $editor-button-bg: null !default;
@@ -207,8 +210,8 @@ label.btn i {
 .admin-controls .nav.nav-pills li.active a,
 .nav-pills>li.active>a, 
 .nav-pills>li>a.active {
-  background: $nav-pill-bg-hover;
-  color: $nav-pill-text-hover;
+  background: $nav-pill-bg-active;
+  color: $nav-pill-text-active;
 }
 
 // Post controls 

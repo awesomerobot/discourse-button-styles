@@ -51,15 +51,23 @@ header_bg_hover:
   default: ''
   description: 'Example: #FF0000 or red'
 
-nav_pill_bg_hover:
+nav_pill_text:
   default: ''
   description: 'Note: Main topic list nav buttons. Example: #FF0000 or red. '
 
-nav_pill_text:
+nav_pill_text_hover:
   default: ''
   description: 'Example: #FF0000 or red'
 
-nav_pill_text_hover:
+nav_pill_bg_hover:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+nav_pill_bg_active:
+  default: ''
+  description: 'Example: #FF0000 or red'
+
+nav_pill_text_active:
   default: ''
   description: 'Example: #FF0000 or red'
 
