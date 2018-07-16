@@ -3,12 +3,12 @@
   "about_url": "https://github.com/t1-tracey/discourse-auxy-theme",
   "license_url": "https://github.com/t1-tracey/discourse-auxy-theme/blob/master/LICENSE",
    "assets": {
-       "Apercu-Light": "assets/.woff",
-       "Apercu-Light2": "assets/.woff2",
-       "Apercu-Regular": "assets/.woff",
-       "Apercu-Regular2": "assets/.woff2",
-       "Apercu-Medium": "assets/.woff",
-       "Apercu-Medium2": "assets/.woff2"
+       "Apercu-Light": "assets/Apercu-Light.woff",
+       "Apercu-Light2": "assets/Apercu-Light.woff2",
+       "Apercu-Regular": "assets/Apercu-Regular.woff",
+       "Apercu-Regular2": "assets/Apercu-Regular.woff2",
+       "Apercu-Medium": "assets/Apercu-Medium.woff",
+       "Apercu-Medium2": "assets/Apercu-Medium.woff2"
    },
    "color_schemes": {
        "Purple Green Orange": {
