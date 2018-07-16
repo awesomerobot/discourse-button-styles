@@ -1,4 +1,27 @@
 {
-  "name": "discourse-buttons",
-  "about_url": "http://discourse.org"
+  "name": "Auxy Theme",
+  "about_url": "https://github.com/t1-tracey/discourse-auxy-theme",
+  "license_url": "https://github.com/t1-tracey/discourse-auxy-theme/blob/master/LICENSE",
+   "assets": {
+       "Apercu-Light": "assets/.woff",
+       "Apercu-Light2": "assets/.woff2",
+       "Apercu-Regular": "assets/.woff",
+       "Apercu-Regular2": "assets/.woff2",
+       "Apercu-Medium": "assets/.woff",
+       "Apercu-Medium2": "assets/.woff2"
+   },
+   "color_schemes": {
+       "Purple Green Orange": {
+          "primary": "ffffff",
+          "secondary": "0f1010",
+          "tertiary": "b786d1",
+          "quarternary": "5bc896",
+          "header_background": "18191c",
+          "header_primary": "dddddd",
+          "highlight": "bc8e5b",
+          "danger": "e88b3e",
+          "success": "67ba6d",
+          "love": "c6679b"
+        }
+    }
 }
