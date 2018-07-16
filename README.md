@@ -1,6 +1,6 @@
 # discourse-auxy-theme
 
-An unofficial Discourse theme for auxy.
+An unofficial auxy theme for Discourse.
 
 * Font (thanks to https://github.com/chipthrasher/auxy)
 * 'Purple Green Orange' color scheme
