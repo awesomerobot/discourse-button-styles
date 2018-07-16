@@ -1,6 +1,6 @@
 global_button_border_radius: 
   type: string
-  default: 0
+  default: '5px'
   description: 'Example: 10% or 10px'
 
 basic_button_bg:
@@ -92,7 +92,7 @@ editor_button_bg:
   description: 'Note: Buttons in the composer. Example: #FF0000 or red. '
 
 editor_button_bg_hover:
-  default: ''
+  default: '#85DEFB'
   description: 'Example: #FF0000 or red'
 
 editor_button_text: 
