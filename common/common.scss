@@ -1,29 +1,5 @@
-@font-face {
-    font-family: 'Apercu';
-    src: url($Apercu-Light2) format('woff2'),
-        url($Apercu-Light) format('woff');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Apercu';
-    src: url($Apercu-Regular2) format('woff2'),
-        url($Apercu-Regular) format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Apercu';
-    src: url($Apercu-Medium2) format('woff2'),
-        url($Apercu-Medium) format('woff');
-    font-weight: 500;
-    font-style: normal;
-}
-
 body {
-    font-family : 'Apercu';
+    font-family: 'Imprima', sans-serif;
 }
 
 
