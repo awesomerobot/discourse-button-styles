@@ -1,7 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Imprima');
+@font-face {
+    font-family: 'Apercu';
+    src: url($Apercu-Light2) format('woff2'),
+        url($Apercu-Light) format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url($Apercu-Regular2) format('woff2'),
+        url($Apercu-Regular) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apercu';
+    src: url($Apercu-Medium2) format('woff2'),
+        url($Apercu-Medium) format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
 
 body {
-    font-family: 'Imprima', sans-serif;
+    font-family: 'Apercu';
+    font-size: 15px;
 }
 
 
@@ -23,7 +46,7 @@ $primary-button-text: null !default;
 $primary-button-bg-hover: null !default;
 $primary-button-text-hover: null !default;
 
-// Header nav 
+// Header nav
 
 $header-text: null !default;
 $header-bg: null !default;
@@ -31,7 +54,7 @@ $header-bg: null !default;
 $header-text-hover: null !default;
 $header-bg-hover: null !default;
 
-// Nav pills 
+// Nav pills
 
 $nav-pill-bg: null !default;
 $nav-pill-text: null !default;
@@ -42,15 +65,15 @@ $nav-pill-text-hover: null !default;
 $nav-pill-bg-active: null !default;
 $nav-pill-text-active: null !default;
 
-// Editor buttons 
+// Editor buttons
 
 $editor-button-bg: null !default;
-$editor-button-color: null !default; 
+$editor-button-color: null !default;
 
 $editor-button-bg-hover: null !default;
 $editor-button-color-hover: null !default;
 
-// Post controls 
+// Post controls
 
 $post-controls-bg: null !default;
 $post-controls-text: null !default;
@@ -91,20 +114,20 @@ $combo-box-text: $basic-button-text !default;
     color: $basic-button-text;
   }
   i.d-icon {opacity: 1;}
-  .d-icon.d-icon-d-regular, 
-  .d-icon.d-icon-d-muted, 
-  .d-icon.d-icon-d-watching-first, 
+  .d-icon.d-icon-d-regular,
+  .d-icon.d-icon-d-muted,
+  .d-icon.d-icon-d-watching-first,
   .d-icon.d-icon-d-watching-first-post {
     color: $basic-button-text;
   }
-  .d-icon.d-icon-d-tracking, 
+  .d-icon.d-icon-d-tracking,
   .d-icon.d-icon-d-watching {
     color: $basic-button-text;
   }
   &:hover {
     background: $basic-button-bg-hover;
     color: $basic-button-text-hover;
-    
+
     &[href],
     .d-icon-thumb-tack {
       color: $basic-button-text-hover;
@@ -114,7 +137,7 @@ $combo-box-text: $basic-button-text !default;
     background: $primary-button-bg;
     color: $primary-button-text;
     border-radius: $global-button-border-radius;
-    
+
     &:hover {
       background: $primary-button-bg-hover;
       color: $primary-button-text-hover;
@@ -122,7 +145,7 @@ $combo-box-text: $basic-button-text !default;
   }
 }
 
-.btn[disabled], 
+.btn[disabled],
 .btn.disabled {
   background: $basic-button-bg !important;
   color: $basic-button-text !important;
@@ -143,16 +166,16 @@ $combo-box-text: $basic-button-text !default;
 .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row.is-selected.is-highlighted {
   background: $basic-button-bg;
   border-radius: $global-button-border-radius;
-  
+
   .name, .d-icon {
-    color: $basic-button-text;    
+    color: $basic-button-text;
   }
   &:hover {
     background: $basic-button-bg-hover;
-    
+
     .name, .d-icon {
-      color: $basic-button-text-hover;    
-    }  
+      color: $basic-button-text-hover;
+    }
   }
 }
 
@@ -161,7 +184,7 @@ $combo-box-text: $basic-button-text !default;
 }
 
 .list-controls .select-kit.dropdown-select-box .dropdown-select-box-header:hover {
-  background: $basic-button-bg-hover;  
+  background: $basic-button-bg-hover;
 }
 .select-kit.dropdown-select-box .dropdown-select-box-header:hover .d-icon {
   color: $basic-button-text-hover;
@@ -170,27 +193,27 @@ $combo-box-text: $basic-button-text !default;
 .bootbox.modal .modal-footer a.btn-primary {
   color: $primary-button-text;
   &:hover {
-    color: $primary-button-text-hover;    
-  }  
+    color: $primary-button-text-hover;
+  }
 }
 
 label.btn i {
   color: $basic-button-text;
   &:hover {
-    color: $basic-button-text-hover;    
+    color: $basic-button-text-hover;
   }
 }
 
-// Header nav 
+// Header nav
 
   .d-header-icons {
     .icon {
-      background: $header-bg;    
+      background: $header-bg;
       color: $header-text;
     }
     .icon:hover {
       background: $header-bg-hover;
-      color: $header-text-hover; 
+      color: $header-text-hover;
     }
     .drop-down-mode & {
       .active .icon {
@@ -199,36 +222,36 @@ label.btn i {
     }
   }
 
-// Nav pills 
+// Nav pills
 .nav-pills>li>a {
   background: $nav-pill-bg;
   color: $nav-pill-text;
   border-radius: $global-button-border-radius;
-  
+
   .d-icon {
     opacity: 1;
   }
   &:hover {
     background: $nav-pill-bg-hover;
-    color: $nav-pill-text-hover;  
+    color: $nav-pill-text-hover;
   }
 }
 
 .admin-controls .nav.nav-pills li.active a,
-.nav-pills>li.active>a, 
+.nav-pills>li.active>a,
 .nav-pills>li>a.active {
   background: $nav-pill-bg-active;
   color: $nav-pill-text-active;
 }
 
-// Post controls 
+// Post controls
 
 .discourse-no-touch .topic-body .actions .fade-out {
   opacity: 1;
-  transition: background-color .25s, color .25s;  
+  transition: background-color .25s, color .25s;
 }
 
-nav.post-controls a, 
+nav.post-controls a,
 nav.post-controls button,
 nav.post-controls button.create {
   background: $post-controls-bg;
@@ -236,29 +259,29 @@ nav.post-controls button.create {
   border-radius: $global-button-border-radius;
   transition: background-color .25s, color .25s;
   &.delete {
-    background: $danger;    
+    background: $danger;
     &:hover {
-      background: $danger;   
-      color: $secondary; 
+      background: $danger;
+      color: $secondary;
     }
-  }  
+  }
   &:hover {
     background: $post-controls-bg-hover;
     color: $post-controls-text-hover;
   }
 }
 nav.post-controls .like-button,
-nav.post-controls .like-button .like-count, 
+nav.post-controls .like-button .like-count,
 nav.post-controls .like-button .my-likes {
   background: $post-controls-bg;
-  
+
   color: $post-controls-text;
   margin-right: 5px;
   border-radius: $global-button-border-radius;
 
-  i.d-icon, .like-count { 
-    color: $post-controls-text; 
-    background: transparent; 
+  i.d-icon, .like-count {
+    color: $post-controls-text;
+    background: transparent;
   }
   &:hover {
     background: $like-button-bg-hover;
@@ -267,14 +290,14 @@ nav.post-controls .like-button .my-likes {
       color: $like-button-text-hover;
       text-decoration: underline;
     }
-  }      
+  }
 }
 .has-like {
   margin-left: -2px;
 }
 
 
-// Combo-box header 
+// Combo-box header
 
 .list-controls .combo-box .combo-box-header,
 .list-controls .select-kit.dropdown-select-box .dropdown-select-box-header,
@@ -284,25 +307,25 @@ nav.post-controls .like-button .my-likes {
   background: $combo-box-bg;
   color: $combo-box-text;
   border-radius: $global-button-border-radius;
-  
+
   i {
     background: transparent;
-    color: $combo-box-text;    
+    color: $combo-box-text;
   }
   .badge-wrapper.bullet span.badge-category,
   .badge-wrapper.bar span.badge-category {
-    color: $combo-box-text;        
+    color: $combo-box-text;
   }
 }
 .category-breadcrumb {
   .is-none {
-    background: $combo-box-bg !important; 
+    background: $combo-box-bg !important;
     color: $combo-box-text !important;
-    
+
     i {
       background: transparent !important;
-      color: $combo-box-text !important;    
-    } 
+      color: $combo-box-text !important;
+    }
   }
 }
 .period-chooser-header {
@@ -316,18 +339,18 @@ nav.post-controls .like-button .my-likes {
   .mobile-nav>li>a {
     background: $combo-box-bg;
     color: $combo-box-text;
-    border-radius: $global-button-border-radius;  
+    border-radius: $global-button-border-radius;
     .fa {
       color: $combo-box-text;
-    
+
     }
   }
 }
 
-// Editor buttons 
+// Editor buttons
 
 .d-editor-button-bar {
-   button, 
+   button,
    .select-kit.dropdown-select-box .dropdown-select-box-header {
     background: $editor-button-bg;
     color: $editor-button-text;
@@ -341,13 +364,13 @@ nav.post-controls .like-button .my-likes {
     }
     }
   .select-kit.dropdown-select-box .dropdown-select-box-header:hover .d-icon {
-    color: $editor-button-text-hover;  
-    border-radius: $global-button-border-radius;    
+    color: $editor-button-text-hover;
+    border-radius: $global-button-border-radius;
   }
 }
 
 #reply-control .reply-to button i {
-   border-radius: $global-button-border-radius;   
+   border-radius: $global-button-border-radius;
 
 }
 
@@ -373,4 +396,3 @@ button.cancel, .btn-danger {
     color: $secondary;
   }
 }
-
