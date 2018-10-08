@@ -94,23 +94,26 @@ $combo-box-text: $basic-button-text !default;
   .d-icon.d-icon-d-watching {
     color: $basic-button-text;
   }
-  &:hover {
-    background: $basic-button-bg-hover;
-    color: $basic-button-text-hover;
-    
-    &[href],
-    .d-icon-thumb-tack {
+  .discourse-no-touch & {
+    &:hover {
+      background: $basic-button-bg-hover;
       color: $basic-button-text-hover;
+      
+      &[href],
+      .d-icon-thumb-tack {
+        color: $basic-button-text-hover;
+      }
     }
   }
   &.btn-primary {
     background: $primary-button-bg;
     color: $primary-button-text;
     border-radius: $global-button-border-radius;
-    
-    &:hover {
-      background: $primary-button-bg-hover;
-      color: $primary-button-text-hover;
+    .discourse-no-touch & {
+      &:hover {
+        background: $primary-button-bg-hover;
+        color: $primary-button-text-hover;
+      }
     }
   }
 }
