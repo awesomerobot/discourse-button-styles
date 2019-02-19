@@ -1,4 +1,5 @@
 {
   "name": "discourse-buttons",
   "about_url": "http://discourse.org"
+  "component": true
 }
