@@ -124,6 +124,10 @@ $combo-box-text: $basic-button-text !default;
   color: $basic-button-text;
 }
 
+.btn-hover, .btn-active, .btn-large, .btn-small {
+    border-radius: $global-button-border-radius;
+}
+
 // Various edge cases
 
 .select-kit.dropdown-select-box.toolbar-popup-menu-options .select-kit-row,
