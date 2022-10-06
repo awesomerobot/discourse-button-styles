@@ -183,12 +183,12 @@ label.btn i {
 
 // Edge case for like button (double button)
 
-.double-button .btn-text {
+.double-button > .like-count {
     border-top-right-radius: 0px !important;
     border-bottom-right-radius: 0px !important;
 }
 
-.double-button .btn-icon {
+.double-button > .like-count + .btn-icon {
     border-top-left-radius: 0px !important;
     border-bottom-left-radius: 0px !important;
 }
