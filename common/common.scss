@@ -181,6 +181,18 @@ label.btn i {
   }
 }
 
+// Edge case for like button (double button)
+
+.double-button > .btn-text {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+}
+
+.double-button > .btn-text + .btn-icon {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+}
+
 // Header nav
 
 .d-header-icons {
